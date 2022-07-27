@@ -1,0 +1,11 @@
+/* General styles */
+
+.loading-map {
+    color: cornflowerblue;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}

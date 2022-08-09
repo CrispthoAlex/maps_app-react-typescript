@@ -22,7 +22,7 @@ interface Props {
 export const PlacesProvider = ({ children }: Props) => {
 
   const [state, dispatch] = useReducer(placesReducer, INITIAL_STATE );
-  
+
   // Get geolocation
   useEffect(() => {
     getUserLocation()
@@ -32,8 +32,8 @@ export const PlacesProvider = ({ children }: Props) => {
           payLoad: coordslnglat,
         }
       ));
-  }, [])
-  
+  }, []);
+
   return (
     <PlacesContext.Provider value={{
       ...state,
